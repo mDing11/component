@@ -1,5 +1,6 @@
 import React from 'react';
-
+import Button from './components/Button'
+import Alert from './components/Alert'
 function App() {
   return (
     <div className="App">
@@ -16,6 +17,8 @@ function App() {
           Learn React
         </a>
       </header>
+      <Button btnType="primary" onClick={e => { console.log(console.log('nihao')) }} size="sm">你好</Button>
+      <Alert type="success" title="确认弹框"/>
     </div>
   );
 }
